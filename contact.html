@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<!-- Contactpagina -->
+<body>
+  <div class="container">
+
+    <!-- Navigatie -->
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Home Imperium Theather" height="70" width="82"></a>
+      </div>
+      <nav class="hoofdmenu">
+        <ul>
+        <li><a href="over-ons.html">Over ons</a></li>
+        <li><a href="leden.html">Leden</a></li>
+        <li><a href="lid-worden.html">Lid Worden</a></li>
+        <li><a href="archief.html">Archief</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Afbeelding onder navigatie -->
+    <section class="menuachtergrond">    
+        <div><img class="slideimg" src="img/contact.png"></div>
+    </section>
+
+    <main>
+
+      <!-- Formulier voor de vragen van de gebruiker -->
+      <section class="meerweten">
+          <h1 class="titelbanner2">We horen graag van u!</h1>
+          <br>
+          <p class="titeltekst">Via onderstaand formulier is het mogelijk om berichten te sturen naar het imperium. Graag horen we feedback of andere belangrijke vragen. </p>
+          <br>
+        <form action="index.html" method="post" class="subscribe-form">
+            <p class="typetextp">Naam*</p>
+            &nbsp;
+            <input class="typetextcontact" type="text" name="naam" placeholder="Voer hier uw naam in" required>
+            <br>
+            <p class="typetextp">E-mailadres*</p>
+            &nbsp;
+            <input class="typetextcontact" type="email" name="naam" placeholder="Voer hier uw e-mailadres in" required>
+            <br>
+            <p class="typetextp">Onderwerp*</p>
+            &nbsp;
+            <input class="typetextcontact" type="text" name="naam" placeholder="Voer hier het onderwerp van uw bericht in" required>
+            <br>
+            <p class="typetextp">Opmerkingen</p>
+            &nbsp;
+            <textarea class="typetextcontact" rows="4" cols="50" name="comment"  placeholder="Laat hier eventuele opmerkingen achter"></textarea>
+            <br>
+            <p class="typetextp">* Verplichte velden</p>
+            <br>
+            <button type="submit" class="lid-submit">Verstuur</button>
+          </form>
+      </section>
+      <div id="map"></div>
+        <script>
+            function myMap() {
+            var mapCanvas = document.getElementById("map");
+            //Dit is om de coordinatien te laten tonen van het theater door middel van Latitude en Longitude
+            var mapOptions = {center: new google.maps.LatLng(52.162202, 4.488284), zoom: 16};
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+        </script>
+        <!-- Google API key die ervoor zorgt dat de google map werkt -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZtQT9clDr2Vm94yoVjmP50XpdmqN0o4A&callback=myMap"></script>
+    </main>
+
+    <footer>
+      <div class="row">
+        <div class="column">
+          <nav class="footer-menu">
+            <a href="over-ons.html">Over ons</a>
+            <a href="leden.html">Leden</a>
+            <a href="lid-worden.html">Lid Worden</a>
+            <a href="archief.html">Archief</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="column">
+          <h2 class="centerh2">Social media</h2>
+          <a href="https://www.facebook.com/ToneelgroepImperium?fref=ts"><img class="SMWimg" src="img/facebook.png" alt="Like ons op facebook" height="60" width="55" /></a>
+          <a href="https://twitter.com/imperiumtheater"><img src="img/twitter.png" alt="Volg ons op twitter" height="60" width="55" /></a>
+        </div>
+        <div class="column">
+          <ul class="contactfooter">
+            <li><img src="img/bellen.png" width="19px" height="19px">&nbsp;071 5141035</li>
+            <li><img src="img/email.png" width="19px" height="19px">&nbsp;<a class="linkmailto" href="mailto:info@imperium.nl">info@imperium.nl</a></li>
+            <li><img src="img/locatie.png" width="19px" height="24px">&nbsp;Oude Vest 33e 2312 XR Leiden</li>
+          </ul>
+        </div>
+      </div>
+    <footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,747 @@
+/* Met font face pak ik het font van de site vanuit een lokale map. Dit zorgt ervoor dat de site niet in Times New Roman eindigd. */
+
+@font-face {
+  font-family: "Gravity";
+  src:local("../font/gravity/Gravity-Regular.otf");
+  src:local("../font/gravity/Gravity-Bold.otf");
+}
+
+body {
+  font-family: Gravity, sans-serif;
+  /*padding-top: 400px;*/
+	}
+
+/* Losse styling */
+
+.bodybedankt {
+  background-color: #fffaef;
+  padding: 50px;
+}
+
+p {
+  font-size: 13px;
+}
+
+.aarchief {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  width: 1200px;
+  position: absolute;
+  z-index: 999;
+}
+
+.leesmeer {
+  text-align: right;
+  float: right;
+  text-decoration: none;
+  color: #1CB0F6;
+}
+
+.meerweten {
+  background-color: #fffaef;
+  padding: 50px;
+}
+
+.overonsintro {
+  background-color: #ff5065;
+  padding: 50px;
+}
+
+.jarig {
+  background-color: #ff5065;
+  padding: 50px;
+}
+
+.overonsinfo {
+  background-color: #fffaef;
+  padding: 50px;
+}
+
+.nieuws {
+  background-color: #b2b2b2;
+  padding: 50px;
+  float: left;
+}
+
+.titelbanner {
+  color: #fffaef;
+  text-align: center;
+}
+
+.titelbanner2 {
+  color: #000;
+  text-align: center;
+}
+
+.titeltekst {
+  text-align: center;
+}
+
+footer {
+  background: #444444;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.centerh2 {
+  text-align: center;
+  color: #fffaef;
+}
+
+.centerh21 {
+  color: #000;
+  margin-left: 20px;
+}
+
+.centerh22 {
+  text-align: center;
+  color: #000;
+}
+
+.SMWimg {
+  display: block;
+  margin: 0 auto;
+  float: left;
+  margin-left: 130px;
+}
+
+.SMWimg2 {
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+.righth2 {
+  text-align: right;
+}
+
+#map {
+  width:100%;
+  height:400px;
+}
+
+/* Deze columns zijn voor de verschillende blokken in de site */
+
+.column {
+    float: left;
+    width: 33.33%;
+    height: 171px; 
+}
+
+.column2 {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.33%; 
+}
+
+.column3 {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%; 
+}
+
+.column4 {
+    float: left;
+    height: 350px;
+    padding: 20px;
+    padding-left: 22px;
+    border:20px solid #ff5065;
+    background-color: #fff;
+    width: 33.33%; 
+}
+
+.column5 {
+    float: left;
+    height: 350px;
+    padding: 20px;
+    padding-left: 20px;
+    border:20px solid #ff5065;
+    background-color: #fff;
+    width: 66.66%; 
+}
+
+.column6 {
+    float: left;
+    height: 670px;
+    padding: 20px;
+    padding-left: 34px;
+    border:20px solid #ff5065;
+    background-color: #fff;
+    width: 33.33%; 
+}
+
+.column8 {
+  width: 66.66%;
+  float: left;
+  padding-right: 50px;
+}
+
+.column9 {
+  width: 33.33%;
+  float: left;
+}
+
+.img5 {
+  float: right;
+  margin-top: -123px;
+}
+
+.img6 {
+  float: right;
+  position: absolute;
+  margin-top: 85px;
+  line-height: 20px;
+  margin-left: 375px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* footer menu styling */
+
+.footer-menu {
+  width: 200px;
+}
+
+.footer-menu a {
+  color: #C0EAFF;
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  color: #1CB0F6;
+}
+
+main, section, article, footer {
+  overflow: auto;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;  
+}
+
+.logo {
+  float: left;
+  margin: 5px;
+  margin-left: 45px;
+}
+
+.hoofdmenu {
+  float: right;
+  width: 550px;
+  color: #fffaef;
+ 
+} 
+
+.hoofdmenu ul li {
+  float: left;
+  list-style: none;
+  padding: 0px;
+}
+
+.hoofdmenu li a {
+    display: block;
+    color: #fffaef;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+}
+
+.hoofdmenu li a:hover {
+    color: #C0EAFF;
+}
+
+.voorstellingen {
+  float: left;
+  width: 60%;
+  padding: 50px;
+}
+
+.asidelinks {
+  float: left;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+.asiderechts {
+  float: right;
+  padding: 50px;
+}
+
+.mySlides {
+  display:none;
+}
+ 
+.siema {
+  max-width: 1200px;
+  z-index: 10;
+}
+
+.centerh1 {
+  text-align: center;
+}
+
+.textmeerweten {
+  margin-top: 50px;
+}
+
+.textmeerweten2 {
+  margin-top: 50px;
+  color: #fffaef;
+  text-align: center;
+  font-size: 14pt;
+}
+
+.textmeerweten3 {
+  margin-top: 50px;
+  color: #fffaef;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  font-size: 14pt;
+}
+
+.textmeerweten4 {
+  margin-top: 50px;
+  color: #fffaef;
+  text-align: center;
+  font-size: 14pt;
+}
+
+.textjarig {
+  margin-top: 50px;
+  width: 60%;
+  float: left;
+}
+
+.textnieuws {
+  margin-top: 50px;
+  width: 50%;
+  float: left;
+}
+
+.textons {
+  margin-top: 30px;
+  padding-left: 10px;
+  float: left;
+}
+
+.textons2 {
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 20px;
+  float: left;
+  color: #fffaef;
+}
+
+.slider {
+  position: relative;
+}
+
+/* content van slider in het midden */
+
+#centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 180px;
+    transform: translate(-50%, -50%);
+    color: #fffaef
+}
+
+.menuachtergrond{
+  position: relative;
+}
+
+/* buttons in slider */
+
+.links, .rechts{
+  position: absolute;
+  top: 300px;
+  border-radius: 50%;
+  padding: 8px 14px;
+  background-color: #ff5065;
+  border: 1px solid #000;
+  outline: none;
+}
+
+.links{
+  left: 32px;
+}
+
+.rechts{
+  right: 32px;
+}
+
+.subscribe {
+  background-color: #b2b2b2;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+.active {
+  color: #1CB0F6!important;
+}
+
+/* Dit zorgt voor de kleur aan de formulieren wanneer het formulier correct is ingevuld */
+
+input:required:valid {
+  border: 1px solid #7AC70C;
+}
+
+input:required:invalid {
+  border: 1px solid #ff5065;
+}
+
+/* Dit zorgt ervoor dat er geen spinwiel in de input type is */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.emailhome {
+    width: 260px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #706F6F;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline:none;
+    font-size: 12pt;
+}
+
+.typetextcontact {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #706F6F;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline:none;
+    font-size: 12pt;
+}
+
+.typetextlid {
+    width: 400px;
+    padding: 12px 20px;
+    display: block;
+    border: 1px solid #706F6F;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline:none;
+    font-size: 12pt;
+}
+
+.typetextp {
+  margin-left: 360px;
+}
+
+.email-submit {
+    width: 115px;
+    background-color: #ff5065;
+    color: white;
+    padding: 14px 20px;
+    margin: 0px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+.email-submit:hover {
+    background-color: #BC3C4D;  
+}
+
+.link-submit:hover {
+    background-color: #BC3C4D;  
+}
+
+.lid-submit {
+    width: 150px;
+    background-color: #ff5065;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+.lid-submit:hover {
+    background-color: #BC3C4D;  
+}
+
+/* transparante banners over de afbeeldingen. Met z-index komen ze naar voren en de achtergrond heeft een opacity met rgba */
+
+.lidworden {
+  background-color: rgba(255, 250, 239, 0.5);
+  overflow: auto;
+  width: 1200px;
+  height: 149px;
+  margin-top: 301px;
+  position: absolute;
+  z-index: 999;
+}
+
+.motivatieworden {
+  background-color: rgba(255, 80, 101, 0.5);
+  overflow: auto;
+  width: 1200px;
+  height: 305px;
+  margin-top: 305px;
+  position: absolute;
+  z-index: 999;
+}
+
+/* styling voor de contactinfo */
+
+.contactfooter {
+  float: right;
+  list-style-type: none;
+  width: 205px;
+}
+
+.contactfooter li {
+  color: #fffaef;
+}
+
+/* banner met lid worden in de over ons pagina */
+
+.bannerlidtekst {
+  color: #000;
+  text-align: center;
+  padding: 25px;
+}
+
+.bannerlidwordtekst {
+  color: #fffaef;
+  text-align: center;
+  padding: 25px;
+}
+
+/* link voor de banner op de homepagina en hover */
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+.linkbanner2 {
+  color: #000;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+.linkbanner2:hover {
+  color: #ff5065;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+/* mailto link in de footer */
+
+.linkmailto {
+  color: #1CB0F6;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+.linkmailto:hover {
+  color: #C0EAFF;
+}
+
+/* submit buttons */
+
+.link-submit {
+    width: 220px;
+    background-color: #ff5065;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.link-submit a {
+  color: #fff;
+}
+
+.over-submit {
+    width: 220px;
+    background-color: #1CB0F6;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.over-submit a {
+  color: #fff;
+}
+
+.leden-submit {
+    width: 220px;
+    background-color: #1CB0F6;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.leden-submit a {
+  color: #fff;
+}
+
+/* hover kleuren */
+
+.leden-submit:hover {
+  background-color: #147FB4;
+}
+
+.over-submit:hover {
+  background-color: #147FB4;
+}
+
+/* dit is voor de ghost button */
+
+.ghost-submit {
+    width: 220px;
+    background-color: #fffaef;
+    color: #000000;
+    padding: 14px 20px;
+    margin-top: 85px;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #ff5065;
+}
+
+
+
+/* Dit stuk css was voor de kalender bedoelt.
+
+.month {
+    
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

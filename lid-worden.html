@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lid worden</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<!-- Lid worden pagina -->
+<body>
+  <div class="container">
+
+    <!-- Navigatie -->
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Home Imperium Theather" height="70" width="82"></a>
+      </div> 
+      <nav class="hoofdmenu">
+        <ul>
+        <li><a href="over-ons.html">Over ons</a></li>
+        <li><a href="leden.html">Leden</a></li>
+        <li><a href="lid-worden.html" class="active">Lid Worden</a></li>
+        <li><a href="archief.html">Archief</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- afbeelding over navigatie -->
+    <section class="menuachtergrond">    
+        <div><img class="slideimg" src="img/lidworden.png"></div>
+    </section>    
+
+    <main>
+
+      <!-- Blok met introductie van het formulier -->
+       <section class="overonsintro">
+          <h1 class="titelbanner">Lid worden van Imperium?</h1>
+        <p class="textmeerweten3">Ongelooflijk leuk dat je interesse toont in het lidmaatschap van Imperium! We zijn immers altijd op zoek naar nieuwe talentvolle spelers en mensen die onze toneelproducties willen onder-steunen. Want lid worden van Imperium betekent niet alleen toneelspelen, maar vooral ook je inzetten voor de vereniging en voor de eigen voorstellingen van Imperium. </p>
+        <p class="textmeerweten4">
+          Vul het aanmeldformulier hieronder in. Na verzending ontvang je een reactie van ons en zullen we je uitnodigen voor de eerstkomende auditie-avond. De audities zijn meestal in september, november, januari en juni. 
+        </p>
+      </section>
+
+      <!-- Formulier om lid te worden. Wanneer de gebruiker een required veld correct heeft ingevuld wordt het groen. Dit het ik alleen in mijn html toegpast en niet in axure. -->
+      <section class="overonsinfo">
+        <h2>Vul hier het formulier in</h2>
+        <br>
+        <form action="bedankt.html" method="post" class="subscribe-form">
+            <p>Naam*</p>
+            <input class="typetextlid" type="text" name="naam" placeholder="Voer hier uw naam in" required>
+            <br>
+            <p>Adres*</p>
+            <input class="typetextlid" type="text" name="naam" placeholder="Voer hier uw adres in" required>
+            <br>
+            <p>Postcode*</p>
+            <!-- Poscode met maximaal 6 karakters-->
+            <input class="typetextlid" type="text" name="naam" maxlength="6" placeholder="1234AB" required>
+            <br>
+            <p>Woonplaats*</p>
+            <input class="typetextlid" type="text" name="naam" placeholder="Voer hier uw woonplaats in in" required>
+            <br>
+            <p>Telefoonnummer</p>
+            <input class="typetextlid" type="number" maxlength="10" name="naam" placeholder="Voer hier uw telefoonnummer in">
+            <br>
+            <p>Mobiele telefoonnummer</p>
+            <input class="typetextlid" type="number" maxlength="10" name="naam" placeholder="Voer hier uw mobiele telefoonnummer in">
+            <br>
+            <p>E-mailadres*</p>
+            <input class="typetextlid" type="email" name="naam" placeholder="Voer hier uw e-mailadres in" required>
+            <br>
+            <p>Geboortedatum*</p>
+            <input class="typetextlid" type="date" name="naam" placeholder="DD/MM/YYYY" required>
+            <br>
+            <p>Opmerkingen</p>
+            <textarea class="typetextlid" rows="4" cols="50" name="comment"  placeholder="Laat hier eventuele opmerkingen achter"></textarea>
+            
+            <br><br>
+            <h3>Commissie</h3>
+            <input type="checkbox" name="vehicle" value="Bike"> Decor Bouwen<br>
+            <input type="checkbox" name="vehicle" value="Car"> Kleding maken/uitzoeken<br>
+            <input type="checkbox" name="vehicle" value="Bike"> Tekst schrijven voor IMPRESSIE en website<br>
+            <input type="checkbox" name="vehicle" value="Bike"> Techniek (licht/geluid)<br>
+            <input type="checkbox" name="vehicle" value="Bike"> Algemene PR activiteiten<br>
+            <input type="checkbox" name="vehicle" value="Bike"> Foto's maken (voor PR)<br>
+            <input type="checkbox" name="vehicle" value="Bike"> Website onderhouden<br>
+            <input type="checkbox" name="vehicle" value="Bike"> Anders, te weten<br>
+            <br>
+            <h3>Interesse</h3>
+            <input type="checkbox" name="vehicle" value="Bike"> Ik word toneelspelend lid met aanvullende activiteiten<br>
+            <input type="checkbox" name="vehicle" value="Bike"> Ik word alleen lid van een commisie<br>
+            <input type="checkbox" name="vehicle" value="Bike"> Graag ontvang ik de nieuwsbrief<br>
+            <br>
+            <p>* Verplichte velden</p>
+            <br>
+            <button type="submit" class="lid-submit">Verstuur</button>
+          </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="row">
+        <div class="column">
+          <nav class="footer-menu">
+            <a href="over-ons.html">Over ons</a>
+            <a href="leden.html">Leden</a>
+            <a href="lid-worden.html">Lid Worden</a>
+            <a href="archief.html">Archief</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="column">
+          <h2 class="centerh2">Social media</h2>
+          <a href="https://www.facebook.com/ToneelgroepImperium?fref=ts"><img class="SMWimg" src="img/facebook.png" alt="Like ons op facebook" height="60" width="55" /></a>
+          <a href="https://twitter.com/imperiumtheater"><img src="img/twitter.png" alt="Volg ons op twitter" height="60" width="55" /></a>
+        </div>
+        <div class="column">
+          <ul class="contactfooter">
+            <li><img src="img/bellen.png" width="19px" height="19px">&nbsp;071 5141035</li>
+            <li><img src="img/email.png" width="19px" height="19px">&nbsp;<a class="linkmailto" href="mailto:info@imperium.nl">info@imperium.nl</a></li>
+            <li><img src="img/locatie.png" width="19px" height="24px">&nbsp;Oude Vest 33e 2312 XR Leiden</li>
+          </ul>
+        </div>
+      </div>
+    <footer>
+  </div>  
+</body>
+</html>
